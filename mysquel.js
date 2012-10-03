@@ -2,7 +2,7 @@ var squel = require('./squel')
   , insertSet = squel.Insert.prototype.set
   , insertToString = squel.Insert.prototype.toString;
 
-formatValue = function(value, options) {
+function formatValue (value, options) {
     if (null === value) {
         value = "NULL";
     } else if ("boolean" === typeof value) {
@@ -13,7 +13,7 @@ formatValue = function(value, options) {
         }
     }
     return value;
-};
+}
 
 squel.Insert.prototype.set = function(field, value, options) {
     console.log('CUSTOM SET');
