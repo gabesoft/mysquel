@@ -1,0 +1,20 @@
+{
+	"name": "mysquel",
+	"description": "SQL query string builder for the mysql database",
+	"version": "0.0.1",
+	"author": "Gabriel Adomnicai <gabesoft@gmail.com>",
+    "dependencies": {
+    },
+	"devDependencies": {
+        "mocha": "1.5.x",
+        "should": "*"
+	},
+    "keywords": ["sql", "database", "rdbms", "mysql"],
+    "main": "mysquel",
+	"repository" :{
+			"type" : "git",
+			"url" : "https://github.com/gabesoft/mysquel.git"
+	 },
+	"engines": { "node": ">= 0.6.0" }
+}
+
