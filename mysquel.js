@@ -16,10 +16,8 @@ function formatValue (value, options) {
 }
 
 squel.Insert.prototype.set = function(field, value, options) {
-    console.log('CUSTOM SET');
     this.fieldOptions = this.fieldOptions || {};
     this.fieldOptions[field] = options;
-    console.log(this.fieldOptions);
     return insertSet.apply(this, [field, value]);
 };
 
@@ -30,7 +28,6 @@ squel.Insert.prototype.toString = function() {
       , values   = this.fields
       , update   = '';
 
-    console.log(foptions);
     Object.keys(foptions).forEach(function(field) {
         var opts = foptions[field];
         if (opts && opts.duplicateKeyUpdate) {

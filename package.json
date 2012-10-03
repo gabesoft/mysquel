@@ -1,7 +1,7 @@
 {
 	"name": "mysquel",
     "description": "SQL query string builder for the mysql database (builds upon squel: https://github.com/hiddentao/squel)",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"author": "Gabriel Adomnicai <gabesoft@gmail.com>",
     "dependencies": {
     },
