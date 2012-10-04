@@ -1,3 +1,5 @@
+# mysquel - SQL query string builder for Javascript (tailored for mysql)
+
 The original documentation is here [https://github.com/hiddentao/squel/blob/master/README.md]
 
 Added functionality for ON DUPLICATE KEY UPDATE option for mysql insert
