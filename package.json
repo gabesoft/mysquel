@@ -1,20 +1,23 @@
 {
-	"name": "mysquel",
+    "name": "mysquel",
     "description": "SQL query string builder for the mysql database (builds upon squel: https://github.com/hiddentao/squel)",
-	"version": "0.0.3",
-	"author": "Gabriel Adomnicai <gabesoft@gmail.com>",
+    "version": "0.0.3",
+    "author": "Gabriel Adomnicai <gabesoft@gmail.com>",
     "dependencies": {
     },
-	"devDependencies": {
+    "devDependencies": {
         "mocha": "1.5.x",
         "should": "*"
-	},
+    },
+    "scripts": {
+        "test": "./node_modules/mocha/bin/mocha --reporter spec test/"
+    },
     "keywords": ["sql", "database", "rdbms", "mysql"],
     "main": "mysquel",
-	"repository" :{
-			"type" : "git",
-			"url" : "https://github.com/gabesoft/mysquel.git"
-	 },
-	"engines": { "node": ">= 0.6.0" }
+    "repository" :{
+        "type" : "git",
+        "url" : "https://github.com/gabesoft/mysquel.git"
+    },
+    "engines": { "node": ">= 0.6.0" }
 }
 
