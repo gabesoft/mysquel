@@ -1,5 +1,5 @@
-var squel = require('./squel')
-  , insertSet = squel.Insert.prototype.set
+var squel          = require('./squel')
+  , insertSet      = squel.Insert.prototype.set
   , insertToString = squel.Insert.prototype.toString;
 
 function formatValue (value, options) {
@@ -16,7 +16,7 @@ function formatValue (value, options) {
 }
 
 squel.Insert.prototype.set = function(field, value, options) {
-    this.fieldOptions = this.fieldOptions || {};
+    this.fieldOptions        = this.fieldOptions || {};
     this.fieldOptions[field] = options;
     return insertSet.apply(this, [field, value]);
 };
